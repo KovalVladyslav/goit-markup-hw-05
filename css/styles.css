@@ -353,22 +353,28 @@ button {
 .what-we-do-list {
   position: relative;
 }
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 
-  padding-top: 27px;
-  padding-bottom: 27px;
-  width: 100%;
-
-  background-color: rgba(47, 48, 58, 0.8);
-}
 .overlay-text {
+  position: absolute;
+
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
+  font-weight: 700;
+  line-height: 1.14;
+
+
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
+
 
 /* Our team */
 .our-team {
@@ -587,7 +593,6 @@ button {
   color: var(--primary-background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 .photo-list {
   display: flex;
@@ -656,8 +661,8 @@ button {
   transition: transform var(--animate);
 }
 
-.photo-item:hover .overlay-portfolion,
-.photo-item:focus .overlay-portfolion {
+.photo-link:hover .overlay-portfolion,
+.photo-link:focus .overlay-portfolion {
   transform: translateY(0);
 }
 .overlay-text-portfolio {
